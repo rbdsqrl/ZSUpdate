@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ZSUpdate</string>
+    <string name="status">Waiting...</string>
+</resources>
