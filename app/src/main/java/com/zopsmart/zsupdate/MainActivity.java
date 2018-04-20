@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tvStatus = findViewById(R.id.tvStatus);
         UpdateHelper updateHelper = new UpdateHelper(this);
-        updateHelper.listenForUpdates("com.zopsmart.epos", new UpdateListener() {
+        updateHelper.listenForUpdates(getPackageName(), new UpdateListener() {
             @Override
             public void error(Throwable e) {
                 tvStatus.setText(e.getMessage());
